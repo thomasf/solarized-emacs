@@ -40,6 +40,7 @@
 ;;; Code:
 
 (require 'dash)
+(require 'color)
 
 ;;; Options
 
@@ -203,6 +204,23 @@ customize the resulting theme."
          (cyan-l    "#69CABF")
          (green-d   "#546E00")
          (green-l   "#B4C342")
+
+         (base03-lab '(15 -12 -12))
+         (base02-lab '(20 -12 -12))
+         (base01-lab '(45 -07 -07))
+         (base00-lab '(50 -07 -07))
+         (base0-lab '(60 -06 -03))
+         (base1-lab '(65 -05 -02))
+         (base2-lab '(92 -00  10))
+         (base3-lab '(97  00  10))
+         (yellow-lab '(60  10  65))
+         (orange-lab '(50  50  55))
+         (red-lab '(50  65  45))
+         (magenta-lab '(50  65 -05))
+         (violet-lab '(50  15 -45))
+         (blue-lab '(55 -10 -45))
+         (cyan-lab '(60 -35 -05))
+         (green-lab '(60 -20  65))
 
          ;; Solarized palette names, use these instead of -fg -bg...
          (base0 (if (eq variant 'light) s-base00 s-base0))
